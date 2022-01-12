@@ -1,0 +1,7 @@
+{
+  "primarySource" : {
+      "url": "https://www.doviz.com/",
+      "container": ".market-data",
+      "element": ".item"
+  }
+}

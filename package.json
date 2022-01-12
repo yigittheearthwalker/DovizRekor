@@ -1,0 +1,22 @@
+{
+  "name": "dovizrekor",
+  "version": "1.0.0",
+  "description": "This is an app that publishes the ATH points of some currencies against TRY",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js --config nodemon.json",
+    "server": "nodemon server.js --config nodemon.json",
+    "dev": "npm run server"
+  },
+  "author": "yigittheearthwalker",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "node-cron": "^3.0.0",
+    "nodemon": "^2.0.15",
+    "request": "^2.88.2"
+  }
+}

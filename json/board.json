@@ -1,0 +1,170 @@
+{
+  "usd": {
+    "current": {
+      "dateTime": "2021-12-28T19:11:03.332Z",
+      "value": 11.8721
+    },
+    "hourlyMin": {
+      "dateTime": "2021-12-28T19:08:01.352Z",
+      "value": 11.8401
+    },
+    "hourlyMax": {
+      "dateTime": "2021-12-28T13:17:00.741Z",
+      "value": 11.9122
+    },
+    "dailyMin": {
+      "dateTime": null,
+      "value": 0
+    },
+    "dailyMax": {
+      "dateTime": "2021-12-28T19:11:03.332Z",
+      "value": 11.8721
+    },
+    "weeklyMin": {
+      "dateTime": null,
+      "value": 0
+    },
+    "weeklyMax": {
+      "dateTime": "2021-12-28T19:11:03.332Z",
+      "value": 11.8721
+    },
+    "monthlyMin": {
+      "dateTime": null,
+      "value": 0
+    },
+    "monthlyMax": {
+      "dateTime": "2021-12-28T19:11:03.332Z",
+      "value": 11.8721
+    },
+    "ath": {
+      "dateTime": "2021-12-28T19:11:03.332Z",
+      "value": 11.8721
+    }
+  },
+  "euro": {
+    "current": {
+      "dateTime": "2021-12-28T19:11:03.332Z",
+      "value": 13.4033
+    },
+    "hourlyMin": {
+      "dateTime": "2021-12-28T18:53:01.080Z",
+      "value": 13.3872
+    },
+    "hourlyMax": {
+      "dateTime": "2021-12-28T13:21:00.316Z",
+      "value": 13.557
+    },
+    "dailyMin": {
+      "dateTime": null,
+      "value": 0
+    },
+    "dailyMax": {
+      "dateTime": "2021-12-28T19:08:01.352Z",
+      "value": 13.4185
+    },
+    "weeklyMin": {
+      "dateTime": null,
+      "value": 0
+    },
+    "weeklyMax": {
+      "dateTime": "2021-12-28T19:08:01.352Z",
+      "value": 13.4185
+    },
+    "monthlyMin": {
+      "dateTime": null,
+      "value": 0
+    },
+    "monthlyMax": {
+      "dateTime": "2021-12-28T19:08:01.352Z",
+      "value": 13.4185
+    },
+    "ath": {
+      "dateTime": "2021-12-28T19:08:01.352Z",
+      "value": 13.4185
+    }
+  },
+  "pound": {
+    "current": {
+      "dateTime": "2021-12-28T19:11:03.332Z",
+      "value": 15.9347
+    },
+    "hourlyMin": {
+      "dateTime": "2021-12-28T19:11:03.332Z",
+      "value": 15.9347
+    },
+    "hourlyMax": {
+      "dateTime": "2021-12-28T13:17:00.741Z",
+      "value": 16.0296
+    },
+    "dailyMin": {
+      "dateTime": null,
+      "value": 0
+    },
+    "dailyMax": {
+      "dateTime": "2021-12-28T19:08:01.352Z",
+      "value": 15.9442
+    },
+    "weeklyMin": {
+      "dateTime": null,
+      "value": 0
+    },
+    "weeklyMax": {
+      "dateTime": "2021-12-28T19:08:01.352Z",
+      "value": 15.9442
+    },
+    "monthlyMin": {
+      "dateTime": null,
+      "value": 0
+    },
+    "monthlyMax": {
+      "dateTime": "2021-12-28T19:08:01.352Z",
+      "value": 15.9442
+    },
+    "ath": {
+      "dateTime": "2021-12-28T19:08:01.352Z",
+      "value": 15.9442
+    }
+  },
+  "gold": {
+    "current": {
+      "dateTime": "2021-12-28T19:11:03.332Z",
+      "value": 691.17
+    },
+    "hourlyMin": {
+      "dateTime": "2021-12-28T19:08:01.352Z",
+      "value": 690.19
+    },
+    "hourlyMax": {
+      "dateTime": "2021-12-28T13:17:00.741Z",
+      "value": 695.39
+    },
+    "dailyMin": {
+      "dateTime": null,
+      "value": 0
+    },
+    "dailyMax": {
+      "dateTime": null,
+      "value": 691.84
+    },
+    "weeklyMin": {
+      "dateTime": null,
+      "value": 0
+    },
+    "weeklyMax": {
+      "dateTime": null,
+      "value": 691.84
+    },
+    "monthlyMin": {
+      "dateTime": null,
+      "value": 0
+    },
+    "monthlyMax": {
+      "dateTime": null,
+      "value": 691.84
+    },
+    "ath": {
+      "dateTime": null,
+      "value": 691.84
+    }
+  }
+}

@@ -1,0 +1,162 @@
+[
+  {
+    "dateTime": "2021-12-20T07:01:20.727Z",
+    "message": "updating usd to 17.5985 in board log file...",
+    "updatedCurrency": "usd"
+  },
+  {
+    "dateTime": "2021-12-20T11:46:26.036Z",
+    "message": "updating euro to 19.8291 in board log file...",
+    "updatedCurrency": "euro"
+  },
+  {
+    "dateTime": "2021-12-20T11:50:46.158Z",
+    "message": "updating usd to 17.6037 in board log file...",
+    "updatedCurrency": "usd"
+  },
+  {
+    "dateTime": "2021-12-20T11:50:46.158Z",
+    "message": "updating euro to 19.8615 in board log file...",
+    "updatedCurrency": "euro"
+  },
+  {
+    "dateTime": "2021-12-20T12:04:06.435Z",
+    "message": "updating usd to 17.6691 in board log file...",
+    "updatedCurrency": "usd"
+  },
+  {
+    "dateTime": "2021-12-20T12:04:06.435Z",
+    "message": "updating euro to 19.9344 in board log file...",
+    "updatedCurrency": "euro"
+  },
+  {
+    "dateTime": "2021-12-20T12:04:06.435Z",
+    "message": "updating pound to 23.343 in board log file...",
+    "updatedCurrency": "pound"
+  },
+  {
+    "dateTime": "2021-12-20T12:16:26.776Z",
+    "message": "updating usd to 17.7572 in board log file...",
+    "updatedCurrency": "usd"
+  },
+  {
+    "dateTime": "2021-12-20T12:16:26.776Z",
+    "message": "updating euro to 20.0204 in board log file...",
+    "updatedCurrency": "euro"
+  },
+  {
+    "dateTime": "2021-12-20T12:16:26.776Z",
+    "message": "updating pound to 23.4648 in board log file...",
+    "updatedCurrency": "pound"
+  },
+  {
+    "dateTime": "2021-12-20T12:16:26.776Z",
+    "message": "updating gold to 1.025 in board log file...",
+    "updatedCurrency": "gold"
+  },
+  {
+    "dateTime": "2021-12-20T12:20:26.853Z",
+    "message": "updating usd to 17.7582 in board log file...",
+    "updatedCurrency": "usd"
+  },
+  {
+    "dateTime": "2021-12-20T12:20:26.853Z",
+    "message": "updating pound to 23.4703 in board log file...",
+    "updatedCurrency": "pound"
+  },
+  {
+    "dateTime": "2021-12-20T12:20:26.853Z",
+    "message": "updating gold to 1.026 in board log file...",
+    "updatedCurrency": "gold"
+  },
+  {
+    "dateTime": "2021-12-20T12:46:27.446Z",
+    "message": "updating usd to 17.7942 in board log file...",
+    "updatedCurrency": "usd"
+  },
+  {
+    "dateTime": "2021-12-20T12:46:27.446Z",
+    "message": "updating euro to 20.1601 in board log file...",
+    "updatedCurrency": "euro"
+  },
+  {
+    "dateTime": "2021-12-20T12:46:27.446Z",
+    "message": "updating pound to 23.658 in board log file...",
+    "updatedCurrency": "pound"
+  },
+  {
+    "dateTime": "2021-12-20T12:46:27.446Z",
+    "message": "updating gold to 1.028 in board log file...",
+    "updatedCurrency": "gold"
+  },
+  {
+    "dateTime": "2021-12-20T13:16:48.196Z",
+    "message": "updating usd to 17.8115 in board log file...",
+    "updatedCurrency": "usd"
+  },
+  {
+    "dateTime": "2021-12-20T13:16:48.196Z",
+    "message": "updating gold to 1.029 in board log file...",
+    "updatedCurrency": "gold"
+  },
+  {
+    "dateTime": "2021-12-20T13:21:08.198Z",
+    "message": "updating usd to 17.8547 in board log file...",
+    "updatedCurrency": "usd"
+  },
+  {
+    "dateTime": "2021-12-20T13:21:08.198Z",
+    "message": "updating pound to 23.6971 in board log file...",
+    "updatedCurrency": "pound"
+  },
+  {
+    "dateTime": "2021-12-20T13:21:08.198Z",
+    "message": "updating gold to 1.032 in board log file...",
+    "updatedCurrency": "gold"
+  },
+  {
+    "dateTime": "2021-12-20T13:32:08.734Z",
+    "message": "updating usd to 17.9226 in board log file...",
+    "updatedCurrency": "usd"
+  },
+  {
+    "dateTime": "2021-12-20T13:32:08.734Z",
+    "message": "updating euro to 20.2313 in board log file...",
+    "updatedCurrency": "euro"
+  },
+  {
+    "dateTime": "2021-12-20T13:32:08.734Z",
+    "message": "updating pound to 23.731 in board log file...",
+    "updatedCurrency": "pound"
+  },
+  {
+    "dateTime": "2021-12-20T13:32:08.734Z",
+    "message": "updating gold to 1.034 in board log file...",
+    "updatedCurrency": "gold"
+  },
+  {
+    "dateTime": "2021-12-20T14:17:49.977Z",
+    "message": "updating euro to 20.2588 in board log file...",
+    "updatedCurrency": "euro"
+  },
+  {
+    "dateTime": "2021-12-20T14:17:49.977Z",
+    "message": "updating pound to 23.7404 in board log file...",
+    "updatedCurrency": "pound"
+  },
+  {
+    "dateTime": "2021-12-20T14:19:14.008Z",
+    "message": "updating gold to 1034.41 in board log file...",
+    "updatedCurrency": "gold"
+  },
+  {
+    "dateTime": "2021-12-20T14:36:34.326Z",
+    "message": "updating euro to 20.2601 in board log file...",
+    "updatedCurrency": "euro"
+  },
+  {
+    "dateTime": "2021-12-20T14:36:34.326Z",
+    "message": "updating gold to 1035.42 in board log file...",
+    "updatedCurrency": "gold"
+  }
+]
