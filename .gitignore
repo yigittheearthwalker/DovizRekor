@@ -1,2 +1,10 @@
 node_modules/
 archieve/
+json/
+
+.package-lock.json
+json/board.json
+json/euroHourly.json
+json/poundHourly.json
+json/usdHourly.json
+package-lock.json

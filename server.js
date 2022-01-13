@@ -16,7 +16,7 @@ cron.schedule('* * * * *', () => {
     pulseForCurrencies();
 });
 
-cron.schedule('0 * * *', () => {
+cron.schedule('0 0 0* * *', () => {
     console.log("Time has come");
 });
 
