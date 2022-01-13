@@ -1,6 +1,5 @@
 node_modules/
 archieve/
-json/
 
 .package-lock.json
 json/board.json
