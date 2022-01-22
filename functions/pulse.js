@@ -1,57 +1,38 @@
 const {primaryCurrencySource} = require("../scrapper/scrapeForCurrency")
 const {getJsonFile, setJsonFile} = require("../functions/jsonHandler");
+const {client} = require('./dbHandler')
+const {v4} = require('uuid')
+
 
 const{HOURLY_MAX, 
       HOURLY_MIN,
-      HOURLY_NORMAL} = require('../utils/types')
+      HOURLY_NORMAL} = require('../utils/types');
 
 
-const pulseForCurrencies = () => {
+const pulseForCurrencies =  () => {
         primaryCurrencySource().then(package => {
-           
-            let boardJson = getJsonFile('board')
+            console.log(package);
+            for (const key in package) {
+                if (Object.hasOwnProperty.call(package, key)) {
+                    let query = "INSERT INTO pulses(id, currency, value, receive_date) VALUES ($1, $2, $3, $4)"
+                    const values = [v4(), key, package[key].value, package[key].dateTime];
 
-            for (const key in boardJson) {
-                if (Object.hasOwnProperty.call(boardJson, key)) {
-                    let currencyReceived = package[key];
-                    let currencyBoarded = boardJson[key];
+                    client.query(query, values, (err, res) => {
+                        if (err) {
+                          console.log(err.stack)
+                        } 
+                      })
 
-                    currencyBoarded["current"] = currencyReceived;
-
-                    let time = new Date().getHours();
-                    if (time >= 9 && time <= 18) {
-                            
-                        let shouldCheckHourlyRates = true;
-
-                        if (currencyBoarded.hourlyMax.value == 0) {
-                            currencyBoarded.hourlyMax = currencyReceived;
-                            shouldCheckHourlyRates = false;
-                        }
-                        if (currencyBoarded.hourlyMin.value == 0) {
-                            currencyBoarded.hourlyMin = currencyReceived;
-                            shouldCheckHourlyRates = false;
-                        }
-    
-                        if (shouldCheckHourlyRates) {
-                            let hourlyResult = checkHourlyRate(currencyReceived, key)
-                            if (hourlyResult != HOURLY_NORMAL) {
-                                if (hourlyResult === HOURLY_MAX) {
-                                    currencyBoarded["hourlyMax"] = currencyReceived
-                                }else if (hourlyResult === HOURLY_MIN){
-                                    currencyBoarded["hourlyMin"] = currencyReceived
-                                }
-                            }
-                        }
-                    }
-
-                    checkOtherPeriodicalsAndAth(currencyBoarded, currencyReceived, key)
                 }
             }
-            setJsonFile('board', boardJson);
        }).catch(err => console.log(err))
 }
 
-const checkHourlyRate = (currencyReceived, key) => {
+
+
+
+
+/*const checkHourlyRate = (currencyReceived, key) => {
             let hourlyJson = getJsonFile(key+'Hourly')
             if (hourlyJson.length > 59) {
                 hourlyJson.splice(0, 1)
@@ -108,7 +89,7 @@ const checkOtherPeriodicalsAndAth = (currencyBoarded, currencyReceived, currency
 
 const logCurrencyEvent = () => {
 
-}
+}*/
 
 
 module.exports = {pulseForCurrencies}

@@ -1,22 +1,19 @@
 const request = require('request')
 const cheerio = require('cheerio')
-const config = require('config')
+const {primarySource} = require('../config/config')
+
+const{USD, EURO, POUND, GOLD} = require('../utils/types')
 
 const primaryCurrencySource = () => {
     return new Promise((resolve, reject) => {
-        request(config.get('primarySource').url, (error, response, html) => {
-            let currencyPackage = {
-                usd: null,
-                euro: null,
-                pound: null,
-                god: null
-            }
-            let dateTime = new Date().addHours(3)
+        request(primarySource.url, (error, response, html) => {
+            let currencyPackage = {}
+            let dateTime = new Date()
             
             if (!error && response.statusCode == 200) {
                 const $ = cheerio.load(html)
-                const currencyListElement = $(config.get('primarySource').container)
-                $(currencyListElement).find(config.get('primarySource').element).each((i, item) => {
+                const currencyListElement = $(primarySource.container)
+                $(currencyListElement).find(primarySource.element).each((i, item) => {
                     let name = currencyNameConverter($(item).find('.name').text())
                     if (name) {
                         let value = parseFloat((($(item).find('.value').text())
@@ -26,7 +23,6 @@ const primaryCurrencySource = () => {
                         currencyPackage[name] = {dateTime,value}
                     }
                 }) 
-                console.log(currencyPackage.usd.value + " is the currency from the package");
                  resolve(currencyPackage) 
             }else if(error){
                 reject(error)
@@ -46,13 +42,13 @@ Date.prototype.addHours = function(h) {
 const currencyNameConverter = (rawName) => {
     switch (rawName) {
         case 'DOLAR':
-            return "usd"
+            return USD
         case 'GRAM ALTIN':
-            return "gold"
+            return GOLD
         case 'EURO':
-            return "euro"
+            return EURO
         case 'STERLİN':
-            return "pound"
+            return POUND
         default:
             return false
     }

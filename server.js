@@ -3,6 +3,7 @@ const logger = require('morgan')
 const cron = require('node-cron');
 const {pulseForCurrencies} = require('./functions/pulse')
 const {createJsonFileIfNotExists} = require('./functions/jsonHandler')
+const {client} = require('./functions/dbHandler')
 
 
 const app = express()
@@ -16,6 +17,7 @@ cron.schedule('* * * * *', () => {
     pulseForCurrencies();
 });
 
+//Every day at midnight
 cron.schedule('0 0 0* * *', () => {
     console.log("Time has come");
 });
