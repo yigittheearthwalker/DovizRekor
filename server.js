@@ -6,7 +6,11 @@ const {createJsonFileIfNotExists} = require('./functions/jsonHandler')
 const {client} = require('./functions/dbHandler')
 
 
+
 const app = express()
+
+app.set('view engine', 'ejs');
+app.use(express.static(__dirname + '/views'));
 
 app.use(logger('dev'))
 
@@ -26,7 +30,8 @@ cron.schedule('* * * * *', () => {
 app.get('/', async(req, res) => {
     let c = await getCurrencyInfo();
     console.log(c);
-    res.json(c)
-    
+    //res.json(c)
+    res.render('home', {data: c});
+
 })
 app.listen(8050, () => console.log('Server started... Listening to the wind of port 8050'))
